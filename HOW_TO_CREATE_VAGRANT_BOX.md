@@ -153,7 +153,7 @@ ssh vagrant@localhost -p 2222
 パッケージ情報を更新する。
 
 ```bash
-sudo apt update                        # sudoでコマンドを実行する際、パスワードを聞かれる場合がある。
+sudo apt update -y                     # sudoでコマンドを実行する際、パスワードを聞かれる。
 # [sudo] password for vagrant:         # vagrant と入力してEnterキーを押す。
 ```
 
@@ -266,7 +266,7 @@ sudo vim /etc/ssh/sshd_config
 
 ```bash
 sudo mount -t iso9660 /dev/sr0 /mnt
-sudo apt install dkms build-essential
+sudo apt install -y dkms build-essential
 sudo sh /mnt/VBoxLinuxAdditions.run
 ```
 
