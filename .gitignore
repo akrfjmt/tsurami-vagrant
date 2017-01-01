@@ -1,0 +1,5 @@
+/.idea
+/.vagrant
+/upload/*
+/tsurami-vagrant.iml
+/tsurami_xenial64.box
