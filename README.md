@@ -1,8 +1,11 @@
+# tsurami-vagrant
+
 tsurami.com構築用Vagrantfile
 
 ## 背景
 
-Windows機はAnsibleのControl Machineになれない。 
+Windows機はAnsibleのControl Machineになれない。
+
 開発環境のVMをAnsibleでプロビジョニングするためにはControl Machine用のVMがあると便利である。
 
 ## 行うこと
