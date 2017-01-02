@@ -16,8 +16,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "scripts/set_private_key.sh", args: "vagrant #{upload_dest}/id_rsa /home/vagrant/.ssh/id_rsa"
   config.vm.provision "shell", path: "scripts/add_public_key.sh", args: "vagrant #{upload_dest}/id_rsa.pub /home/vagrant/.ssh/authorized_keys"
 
-  config.vm.define "control" do |host|
-    host.vm.hostname = "control"
+  config.vm.define "tsurami-control" do |host|
+    host.vm.hostname = "tsurami-control"
     host.vm.network "private_network", ip: "192.168.56.10"
 
     host.vm.provider "virtualbox" do |v|
